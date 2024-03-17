@@ -1,7 +1,7 @@
-# MIKTI Challenge 1
+MIKTI Challenge 1
 Pada MIKTI challenge 1 ini, saya membuat sebuah program basic dengan menggunakan bahasa dart. Program tersebut merupakan sebuah program yang akan menerima inputan berupa nama dan jurusan dari user dan menampilkannya ke layar sesuai dengan inputan yang telah dimasukkan oleh user.
 
-# MIKTI Challenge 2
+sMIKTI Challenge 2
 Pada MIKTI Challenge 2 kali ini, saya membuat sebuah program konversi suhu dari fahrenheit / reamur / kelvin ke celcius. Program ini hampir sama, seperti pqada MIKTI Challenge 1, hanya saja pada kode program kali ini saya memasukkan statement percabangan if-else didalamnya.
 
 NOTE:
