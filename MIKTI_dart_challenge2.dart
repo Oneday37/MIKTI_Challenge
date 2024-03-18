@@ -6,7 +6,12 @@ void fahrenheit(){
   stdout.write("Masukkan suhu dalam derajat Fahrenheit: "); //Pada line ini, sistem akan menampilkan sebuah pesan kepada user
   var temp = stdin.readLineSync(); //Inputan yang telah dimasukkan oleh user, akan bertipe data String dan disimpan kedalam variabel temp
   num fahrentemp = int.parse(temp ?? "0"); //Baris ini akan menyimpan nilai yang dimasukkan oleh user kedalam variabel fahrentemp dengan tipe data num
-  celcius = (fahrentemp - 32) * 5 / 9; //Rumus konversi suhu dari fahrenheit ke celcius yang disimpan kedalam variabel celcius
+  String celcius = ((fahrentemp - 32) * 5 / 9).toStringAsFixed(2); 
+  /*Rumus konversi suhu dari fahrenheit ke celcius yang disimpan kedalam variabel celcius
+  Fungsi toStringAsFixed() digunakan untuk memberikan batasan jumlah digit yang akan ditampilkan nantinya.
+  Pada program tersebut nilai pada fungsi toStringAsFixed() diset menjadi 2 yang artinya hasil yang keluar akan sebatas 2 angka dibelakang koma
+  NOTE: Fungsi ini mengharuskan untuk menggunakan tipe data String
+  */
 
   print("$fahrentemp derajat Fahrenheit = $celcius derajat Celcius");
 }
@@ -15,7 +20,7 @@ void reamur(){
   stdout.write("Masukkan suhu daalm derajar Reamur: "); //Pada line ini, sistem akan menampilkan sebuah pesan kepada user
   var temp = stdin.readLineSync(); //Inputan yang telah dimasukkan oleh user, akan bertipe data String dan disimpan kedalam variabel temp
   num reamurtemp = int.parse(temp ?? "0"); //Baris ini akan menyimpan nilai yang dimasukkan oleh user kedalam variabel reamurtemp dengan tipe data num
-  celcius = (5 / 4) * reamurtemp; //Rumus konversi suhu dari reamur ke celcius yang disimpan kedalam variabel celcius
+  String celcius = ((5 / 4) * reamurtemp).toStringAsFixed(2); //Rumus konversi suhu dari reamur ke celcius yang disimpan kedalam variabel celcius
 
   print("$reamurtemp derajat Reamur = $celcius derajat Celcius");
 }
@@ -24,7 +29,7 @@ void kelvin(){
   stdout.write("Masukkan suhu dalam derajat Kelvin: "); //Pada line ini, sistem akan menampilkan sebuah pesan kepada user
   var temp = stdin.readLineSync(); //Inputan yang telah dimasukkan oleh user, akan bertipe data String dan disimpan kedalam variabel temp
   num kelvintemp = int.parse(temp ?? "0"); //Baris ini akan menyimpan nilai yang dimasukkan oleh user kedalam variabel kelvintemp dengan tipe data num
-  celcius = kelvintemp - 273; //Rumus konversi suhu dari kelvin ke celcius yang disimpan kedalam variabel celcius
+  String celcius = (kelvintemp - 273).toStringAsFixed(2); //Rumus konversi suhu dari kelvin ke celcius yang disimpan kedalam variabel celcius
 
   print("$kelvintemp derajat Kelvin = $celcius derajat Celcius");
 }
