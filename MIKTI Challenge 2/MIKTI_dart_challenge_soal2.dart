@@ -49,6 +49,3 @@ void main() {
     print("Berdasarkan hasil perhitungan BMI yang telah dilakukan, dapat disimpulkan bahwa John memiliki nilai BMI yang lebih besar dibandingkan Mark");
   }
 }
-
-
-
